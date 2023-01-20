@@ -1,0 +1,11 @@
+.progress-bar-rect-wrapper > div > div {
+  background-color: #34b7a7 !important;
+}
+.progressbar > span {
+  font-size: 12px;
+}
+@media screen and (max-width: 450px) {
+  .progress-bar {
+    width: auto !important;
+  }
+}

@@ -1,0 +1,41 @@
+.image {
+  width: 375px;
+  height: 375px;
+  max-width: 375px;
+  max-height: 375px;
+  border: 1px solid #888888;
+}
+
+.description a {
+  color: #444444;
+  text-decoration: none;
+}
+#facts > .row {
+  display: flex;
+  flex-direction: row;
+}
+.testimonial {
+  border: 1px solid red;
+}
+.testimonial > img {
+}
+.testimonial > h5 {
+}
+.testimonial > p {
+}
+@media screen and (max-width: 450px) {
+  .profile {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .description > .row,
+  #skills > .row {
+    display: flex;
+    flex-direction: column;
+  }
+  #facts > .row > .col {
+    display: flex;
+    flex-direction: column;
+  }
+}

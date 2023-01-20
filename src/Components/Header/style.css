@@ -1,0 +1,39 @@
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  /* z-index: 1030; */
+}
+#header {
+  background: #e9e8e6;
+  box-shadow: 0px 0px 25px 0 rgb(0 0 0 / 8%);
+  z-index: 997;
+  font-size: 15px;
+}
+.logo {
+  color: #222222;
+}
+.nav-link {
+  color: #444444;
+}
+.nav-item {
+  margin: 0px 5px;
+}
+.nav-link:hover {
+  border-bottom: 3px solid #34b7a7;
+}
+.nav-link.active {
+  border-bottom: 3px solid #34b7a7;
+  color: #34b7a7 !important;
+}
+
+
+.nav-icon-link {
+  color: #888888;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+}
+.nav-icon-link:hover {
+  color: #34b7a7;
+}

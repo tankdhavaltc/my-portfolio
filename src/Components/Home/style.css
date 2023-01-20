@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab:wght@300&display=swap");
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../../accets/images/hero-bg.jpg") top right;
+  background-size: cover;
+  padding: 20% 0%;
+  text-align: center;
+}
+#hero > h1 {
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #222222;
+  margin-bottom: 10px;
+}
+#hero > h2 {
+  font-family: "Roboto Slab", serif;
+  width: 61%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#hero > a {
+  background-color: #34b7a7;
+  text-decoration: none;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 50px;
+}

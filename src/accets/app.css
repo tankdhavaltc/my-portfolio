@@ -1,0 +1,10 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 70px 0;
+}
+
