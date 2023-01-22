@@ -5,6 +5,20 @@ body {
 }
 
 section {
-  padding: 70px 0;
+  padding-top: 70px;
 }
 
+.link-btn {
+  background-color: #34b7a7;
+  text-decoration: none;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+}
+
+.link-btn:hover {
+  background-color: #6ad4c8;
+  color: white;
+}

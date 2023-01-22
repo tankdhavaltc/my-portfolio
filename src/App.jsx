@@ -12,10 +12,13 @@ import Contact from "./Components/Contact/Contact"
 import { Route, Routes } from 'react-router-dom';
 import "./accets/app.css";
 import TopButton from './TopButton/TopButton';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
     return (
         <>
+            <ToastContainer />
             <Header />
             <Routes>
                 <Route index element={<Home />} />

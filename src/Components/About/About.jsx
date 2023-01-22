@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Title from '../../Utilities/Title/Title';
 import "./style.css";
 import profile from "../../accets/images/avatar-profile-picture.jpg";
@@ -9,8 +9,11 @@ import { facts } from '../../API/facts';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { testimonials } from '../../API/testimonials';
+import ReactSimplyCarousel from 'react-simply-carousel';
 
 const About = () => {
+    const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+
     return (
         <section id='about'>
             <div className="container">
@@ -74,55 +77,75 @@ const About = () => {
                 <section id="testimonials">
                     <Title name="TESTIMONIALS" />
                     <p className="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta voluptatem modi laborum deserunt! Adipisci enim magni quos temporibus amet sunt praesentium minus et ullam velit veniam quas autem deserunt animi, doloremque sint nam corporis sapiente mollitia in numquam voluptatem. Ipsam dolor at tenetur rem, atque mollitia! Quae, ratione beatae!</p>
-                    <div className="">
-                        {/* <div id="carouselExampleIndicators" class="carousel slide">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                {testimonials.map(({ profile, position, message, username }, index) => {
-                                    return (
-                                        <div class="carousel-item active">
-                                            <div className="testimonial">
-                                                <img src={profile} alt="profile" />
-                                                <h5>{username}</h5>
-                                                <p>{username}</p>
-                                                <p>{message}</p>
-                                            </div>
-                                        </div>
-                                    )
-                                })}
-
-                                <div class="carousel-item">
-                                    <div className="testimonial">
+                    <div className="all-testimonials">
+                        <ReactSimplyCarousel
+                            activeSlideIndex={activeSlideIndex}
+                            onRequestChange={setActiveSlideIndex}
+                            itemsToShow={1}
+                            itemsToScroll={1}
+                            autoplay={true}
+                            autoplayDirection={"forward"}
+                            delay={1000}
+                            dotsNav={{
+                                show: true, itemBtnProps: {
+                                    style: {
+                                        height: 10,
+                                        width: 10,
+                                        borderRadius: "50%",
+                                        border: 1,
+                                        borderColor: "#34b7a7",
+                                        borderStyle: 'solid',
+                                        marginTop: "10px",
+                                        marginRight: "5px",
+                                        background: "white",
+                                    }
+                                },
+                                activeItemBtnProps: {
+                                    style: {
+                                        height: 10,
+                                        width: 10,
+                                        borderRadius: "50%",
+                                        border: 1,
+                                        borderColor: "#34b7a7",
+                                        borderStyle: 'solid',
+                                        marginTop: "10px",
+                                        marginRight: "5px",
+                                        background: "#34b7a7"
+                                    }
+                                }
+                            }}
+                            forwardBtnProps={{
+                                show: false,
+                            }}
+                            backwardBtnProps={{
+                                show: false,
+                            }}
+                            responsiveProps={[
+                                {
+                                    itemsToShow: 1,
+                                    itemsToScroll: 1,
+                                    minWidth: 900,
+                                },
+                            ]}
+                            centerMode={true}
+                            speed={400}
+                            easing="linear"
+                        >
+                            {testimonials.map(({ profile, username, position, message }, index) => {
+                                return (
+                                    <div className="testimonial" key={index} style={{ width: 800, height: 270 }}>
                                         <img src={profile} alt="profile" />
-                                        <h5>user 1</h5>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, amet? Quasi magni, perferendis optio earum fugiat porro ullam reprehenderit architecto.</p>
+                                        <h4>{username}</h4>
+                                        <h5>{position}</h5>
+                                        <p>{message}</p>
                                     </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div className="testimonial">
-                                        <img src={profile} alt="profile" />
-                                        <h5>user 1</h5>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, amet? Quasi magni, perferendis optio earum fugiat porro ullam reprehenderit architecto.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div> */}
+                                )
+                            })}
+                        </ReactSimplyCarousel>
                     </div>
                 </section>
-            </div>
-        </section>
+            </div >
+        </section >
     )
 }
 
