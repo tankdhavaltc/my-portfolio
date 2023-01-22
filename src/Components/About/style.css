@@ -9,6 +9,12 @@
   color: #444444;
   text-decoration: none;
 }
+
+.progress-bar-label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #222222;
+}
 #facts > .row {
   display: flex;
   flex-direction: row;
@@ -70,5 +76,8 @@
   }
   .testimonial > p {
     width: 75%;
+  }
+  .progress-bar > div {
+    width: 300px !important;
   }
 }

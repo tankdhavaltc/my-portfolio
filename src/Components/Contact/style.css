@@ -63,3 +63,12 @@
   background-color: #fff;
   border: 1px solid #ced4da;
 }
+
+@media screen and (max-width: 450px) {
+  .contact-info-form {
+    flex-wrap: wrap;
+  }
+  .input-box {
+    flex-wrap: wrap;
+  }
+}

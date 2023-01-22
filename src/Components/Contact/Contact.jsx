@@ -43,7 +43,7 @@ const Contact = () => {
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div className="d-flex gap-5 flex-wrap">
+                <div className="d-flex gap-5 contact-info-form">
                     <div className="contact">
                         <div className="contact-info">
                             <div className="icon">
@@ -76,7 +76,7 @@ const Contact = () => {
                     <div className="contact-form">
                         <form action="" method="post" onSubmit={handelSubmit}>
                             <div className="form-box">
-                                <div className="form-grp d-flex gap-4 flex-wrap">
+                                <div className="form-grp d-flex gap-4 input-box">
                                     <input type="text" name="fullname" id="fullname" placeholder='Your fullname' required onChange={handelChange} value={formData?.fullname} />
                                     <input type="email" name="email" id="email" placeholder='Your email' required onChange={handelChange} value={formData?.email} />
                                 </div>
