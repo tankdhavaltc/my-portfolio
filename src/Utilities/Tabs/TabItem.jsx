@@ -5,7 +5,7 @@ import "./style.css";
 const TabItem = ({ item }) => {
     const { title, images, category, id, } = item;
     return (
-        <div className='tab-item'>
+        <div className='tab-item' data-aos="flip-left">
             <div className="portfolio">
                 <img src={images[0].imageUrl} alt="project" />
                 <div className="portfolio-info">

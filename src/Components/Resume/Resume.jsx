@@ -7,10 +7,10 @@ const Resume = () => {
         <div className="container">
             <section id="resume">
                 <Title name="resume" />
-                <p className="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta voluptatem modi laborum deserunt! Adipisci enim magni quos temporibus amet sunt praesentium minus et ullam velit veniam quas autem deserunt animi, doloremque sint nam corporis sapiente mollitia in numquam voluptatem. Ipsam dolor at tenetur rem, atque mollitia! Quae, ratione beatae!</p>
+                <p className="text-center mt-3" data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta voluptatem modi laborum deserunt! Adipisci enim magni quos temporibus amet sunt praesentium minus et ullam velit veniam quas autem deserunt animi, doloremque sint nam corporis sapiente mollitia in numquam voluptatem. Ipsam dolor at tenetur rem, atque mollitia! Quae, ratione beatae!</p>
                 <div className="row resume-box">
                     <div className="col">
-                        <div className="resume">
+                        <div className="resume" data-aos="flip-up">
                             <h3 className="resume-title">Sumary</h3>
                             <div className="resume-item">
                                 <h4>Alice Barkley</h4>
@@ -22,7 +22,7 @@ const Resume = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="resume">
+                        <div className="resume" data-aos="flip-down">
                             <h3 className="resume-title">Education</h3>
                             <div className="resume-item">
                                 <h4>M. SC. (CA & IT)</h4>
@@ -38,7 +38,7 @@ const Resume = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col" data-aos="flip-right">
                         <div className="resume">
                             <h3 className="resume-title">Professional Experience</h3>
                             <div className="resume-item">
@@ -67,9 +67,9 @@ const Resume = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </div>
+                </div >
+            </section >
+        </div >
     )
 }
 

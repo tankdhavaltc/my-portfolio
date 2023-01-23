@@ -13,7 +13,7 @@ const PortfolioDetails = () => {
 
     return (
         <div className="container">
-            <section id=''>
+            <section id='' data-aos="zoom-in">
                 <Title name="Project details" />
                 <div className="project-details">
                     <div className="row">

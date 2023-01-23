@@ -15,8 +15,13 @@ import TopButton from './TopButton/TopButton';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import PortfolioDetails from './Components/Portfolio/PortfolioDetails';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const App = () => {
+    AOS.init({
+        duration: 1200,
+    });
     return (
         <>
             <ToastContainer />

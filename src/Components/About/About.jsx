@@ -27,8 +27,8 @@ const About = () => {
         <section id='about'>
             <div className="container">
                 <Title name="About" />
-                <p className="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta voluptatem modi laborum deserunt! Adipisci enim magni quos temporibus amet sunt praesentium minus et ullam velit veniam quas autem deserunt animi, doloremque sint nam corporis sapiente mollitia in numquam voluptatem. Ipsam dolor at tenetur rem, atque mollitia! Quae, ratione beatae!</p>
-                <div className="row profile">
+                <p className="text-center mt-3" data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta voluptatem modi laborum deserunt! Adipisci enim magni quos temporibus amet sunt praesentium minus et ullam velit veniam quas autem deserunt animi, doloremque sint nam corporis sapiente mollitia in numquam voluptatem. Ipsam dolor at tenetur rem, atque mollitia! Quae, ratione beatae!</p>
+                <div className="row profile" data-aos="fade-left">
                     <div className="col-5 image">
                         <img className='img-fluid' src={profile} alt="profile" />
                     </div>
@@ -56,9 +56,9 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <section id='skills'>
+                <section id='skills' data-aos="fade-right">
                     <Title name="Skills" />
-                    <p className="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta voluptatem modi laborum deserunt! Adipisci enim magni quos temporibus amet sunt praesentium minus et ullam velit veniam quas autem deserunt animi, doloremque sint nam corporis sapiente mollitia in numquam voluptatem. Ipsam dolor at tenetur rem, atque mollitia! Quae, ratione beatae!</p>
+                    <p className="text-center mt-3" data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta voluptatem modi laborum deserunt! Adipisci enim magni quos temporibus amet sunt praesentium minus et ullam velit veniam quas autem deserunt animi, doloremque sint nam corporis sapiente mollitia in numquam voluptatem. Ipsam dolor at tenetur rem, atque mollitia! Quae, ratione beatae!</p>
                     <div className="d-flex flex-wrap gap-3 justify-content-center">
                         {skills.map(({ title, width }, index) => {
                             return (
@@ -70,9 +70,9 @@ const About = () => {
                         )}
                     </div>
                 </section>
-                <section id="facts">
+                <section id="facts" data-aos="fade-left">
                     <Title name="facts" />
-                    <p className="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta voluptatem modi laborum deserunt! Adipisci enim magni quos temporibus amet sunt praesentium minus et ullam velit veniam quas autem deserunt animi, doloremque sint nam corporis sapiente mollitia in numquam voluptatem. Ipsam dolor at tenetur rem, atque mollitia! Quae, ratione beatae!</p>
+                    <p className="text-center mt-3" data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta voluptatem modi laborum deserunt! Adipisci enim magni quos temporibus amet sunt praesentium minus et ullam velit veniam quas autem deserunt animi, doloremque sint nam corporis sapiente mollitia in numquam voluptatem. Ipsam dolor at tenetur rem, atque mollitia! Quae, ratione beatae!</p>
                     <div className="row">
                         {facts.map(({ count, title }, index) => {
                             return (
@@ -83,9 +83,9 @@ const About = () => {
                         })}
                     </div>
                 </section>
-                <section id="testimonials">
+                <section id="testimonials" data-aos="fade-right">
                     <Title name="TESTIMONIALS" />
-                    <p className="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta voluptatem modi laborum deserunt! Adipisci enim magni quos temporibus amet sunt praesentium minus et ullam velit veniam quas autem deserunt animi, doloremque sint nam corporis sapiente mollitia in numquam voluptatem. Ipsam dolor at tenetur rem, atque mollitia! Quae, ratione beatae!</p>
+                    <p className="text-center mt-3" data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta voluptatem modi laborum deserunt! Adipisci enim magni quos temporibus amet sunt praesentium minus et ullam velit veniam quas autem deserunt animi, doloremque sint nam corporis sapiente mollitia in numquam voluptatem. Ipsam dolor at tenetur rem, atque mollitia! Quae, ratione beatae!</p>
                     <div className="all-testimonials">
                         <ReactSimplyCarousel
                             activeSlideIndex={activeSlideIndex}

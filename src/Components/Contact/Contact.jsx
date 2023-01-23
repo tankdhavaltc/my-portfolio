@@ -33,9 +33,10 @@ const Contact = () => {
         <div className='container'>
             <section id='contact'>
                 <Title name="contact" />
-                <p className="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta voluptatem modi laborum deserunt! Adipisci enim magni quos temporibus amet sunt praesentium minus et ullam velit veniam quas autem deserunt animi, doloremque sint nam corporis sapiente mollitia in numquam voluptatem. Ipsam dolor at tenetur rem, atque mollitia! Quae, ratione beatae!</p>
+                <p className="text-center mt-3" data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta voluptatem modi laborum deserunt! Adipisci enim magni quos temporibus amet sunt praesentium minus et ullam velit veniam quas autem deserunt animi, doloremque sint nam corporis sapiente mollitia in numquam voluptatem. Ipsam dolor at tenetur rem, atque mollitia! Quae, ratione beatae!</p>
                 <div className="map-area">
                     <iframe
+                        data-aos="zoom-in"
                         className='map-box'
                         title='my address'
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14686.359289168326!2d72.55255662747741!3d23.03882805911551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f521640d4b%3A0x6853ee97a9a2996b!2sNavrangpura%2C%20Ahmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1674406942451!5m2!1sen!2sin"
@@ -60,7 +61,7 @@ const Contact = () => {
                             </div>
                             <div className="desc">
                                 <b>Email: </b>
-                                <a href="mailto:dhavaltank2001@gmail.com">dhavaltank2001@gmail.com</a>
+                                <a href="mailto:dhavaltank2001@gmail.com" target="_blank" rel="noreferrer">dhavaltank2001@gmail.com</a>
                             </div>
                         </div>
                         <div className="contact-info">
