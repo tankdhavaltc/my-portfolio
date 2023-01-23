@@ -4,3 +4,9 @@
   margin: auto;
   margin-top: 15px;
 }
+
+@media screen and (max-width: 450px) {
+  .page-title > div {
+    width: 20%;
+  }
+}

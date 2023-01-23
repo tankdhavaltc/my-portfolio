@@ -23,4 +23,12 @@
   margin: auto;
   margin-bottom: 20px;
 }
+.link-btn-outline{
+  margin-left: 10px;
+}
 
+@media screen and (max-width: 450px) {
+  #hero {
+    padding-top: 300px;
+  }
+}

@@ -1,0 +1,79 @@
+.tabs {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.react-tabs__tab-list {
+  border: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.react-tabs__tab {
+  border: none;
+  text-transform: uppercase;
+  border: 1px solid #34b7a7;
+  border-radius: 50px;
+  padding: 5px 20px;
+}
+
+.react-tabs__tab--selected {
+  background-color: #34b7a7;
+  color: white;
+}
+.react-tabs__tab-panel--selected {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.tab-item {
+  box-shadow: 0px 0 30px rgb(34 34 34 / 8%);
+  cursor: pointer;
+}
+
+.portfolio > img {
+  width: 300px;
+  height: 300px;
+}
+
+.portfolio-info {
+  padding: 10px;
+}
+
+.tab-item:hover {
+  transition: all ease-in-out 0.3s;
+  transform: scale(1.05);
+}
+
+.portfolio-info > h4 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.portfolio-info > p {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+.portfolio-links {
+  text-align: center;
+}
+.portfolio-links > a {
+  color: #222222;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.portfolio-links > a > i {
+  color: #34b7a7;
+}
+
+@media screen and (max-width: 450px) {
+  .react-tabs__tab-panel--selected {
+    align-items: center;
+    justify-content: center;
+  }
+}

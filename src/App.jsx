@@ -14,6 +14,7 @@ import "./accets/app.css";
 import TopButton from './TopButton/TopButton';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import PortfolioDetails from './Components/Portfolio/PortfolioDetails';
 
 const App = () => {
     return (
@@ -27,6 +28,7 @@ const App = () => {
                 <Route exact path='/resume' element={<Resume />} />
                 <Route exact path='/services' element={<Services />} />
                 <Route exact path='/portfolio' element={<Portfolio />} />
+                <Route exact path='/portfolio/:id' element={<PortfolioDetails />} />
                 <Route exact path='/contact' element={<Contact />} />
                 <Route exact path='*' element={<Home />} />
             </Routes>

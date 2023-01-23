@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Title from '../../Utilities/Title/Title';
 import "./style.css";
 import profile from "../../accets/images/avatar-profile-picture.jpg";
@@ -14,7 +14,15 @@ import ReactSimplyCarousel from 'react-simply-carousel';
 
 const About = () => {
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
-
+    const [isShow, setisShow] = useState(true);
+    useEffect(() => {
+        if (window.screen.width <= 450) {
+            setisShow(false);
+        }
+        else {
+            setisShow(true);
+        }
+    }, [])
     return (
         <section id='about'>
             <div className="container">
@@ -87,11 +95,12 @@ const About = () => {
                             autoplay={true}
                             autoplayDirection={"forward"}
                             delay={1000}
+                            speed={1000}
                             dotsNav={{
                                 show: true, itemBtnProps: {
                                     style: {
-                                        height: 10,
-                                        width: 10,
+                                        height: 12,
+                                        width: 12,
                                         borderRadius: "50%",
                                         border: 1,
                                         borderColor: "#34b7a7",
@@ -103,8 +112,8 @@ const About = () => {
                                 },
                                 activeItemBtnProps: {
                                     style: {
-                                        height: 10,
-                                        width: 10,
+                                        height: 12,
+                                        width: 12,
                                         borderRadius: "50%",
                                         border: 1,
                                         borderColor: "#34b7a7",
@@ -116,10 +125,38 @@ const About = () => {
                                 }
                             }}
                             forwardBtnProps={{
-                                show: false,
+                                show: isShow,
+                                style: {
+                                    background: "white",
+                                    border: 1,
+                                    borderStyle: 'solid',
+                                    borderColor: "#34b7a7",
+                                    color: "#34b7a7",
+                                    borderRadius: "50px",
+                                    width: "30px",
+                                    height: "30px",
+                                    cursor: 'pointer',
+                                    alignSelf: 'center',
+                                    textAlign: 'center',
+                                },
+                                children: <i className="fa-sharp fa-solid fa-arrow-right"></i>
                             }}
                             backwardBtnProps={{
-                                show: false,
+                                show: isShow,
+                                style: {
+                                    background: "white",
+                                    border: 1,
+                                    borderStyle: 'solid',
+                                    borderColor: "#34b7a7",
+                                    color: "#34b7a7",
+                                    borderRadius: "50px",
+                                    width: "30px",
+                                    height: "30px",
+                                    cursor: 'pointer',
+                                    alignSelf: 'center',
+                                    textAlign: 'center',
+                                },
+                                children: <i className="fa-solid fa-arrow-left"></i>
                             }}
                             responsiveProps={[
                                 {
@@ -129,7 +166,6 @@ const About = () => {
                                 },
                             ]}
                             centerMode={true}
-                            speed={400}
                             easing="linear"
                         >
                             {testimonials.map(({ profile, username, position, message }, index) => {

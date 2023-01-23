@@ -16,9 +16,26 @@ section {
   border-radius: 50px;
   outline: none;
   border: none;
+  transition: all ease-in-out 0.3s;
+  border: 1px solid #34b7a7;
 }
 
 .link-btn:hover {
-  background-color: #6ad4c8;
+  color: #6ad4c8;
+  background-color: transparent;
+  border: 1px solid #34b7a7;
+}
+
+.link-btn-outline {
+  color: #34b7a7;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+  outline: none;
+  border: 1px solid #34b7a7;
+  transition: all ease-in-out 0.3s;
+}
+.link-btn-outline:hover {
+  background-color: #34b7a7;
   color: white;
 }
